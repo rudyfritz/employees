@@ -1,26 +1,31 @@
 {
-  "name": "api-rest",
-  "version": "1.0.0",
-  "description": "Proyecto de API REST Employees",
-  "main": "employees.js",
-  "scripts": {
-    "start": "node employees.js",
-    "serve": "nodemon employees.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "employees",
+  "version": "0.3.0",
+  "description": "API REST Employees",
+  "engines": {
+    "node": "11.x"
   },
-  "author": "Rudy Llantoy",
-  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
   "dependencies": {
-    "bcrypt-nodejs": "0.0.3",
-    "body-parser": "^1.15.2",
-    "crypto": "0.0.3",
-    "express": "^4.14.0",
-    "express-handlebars": "^3.0.0",
-    "jwt-simple": "^0.5.1",
-    "moment": "^2.16.0",
-    "mongoose": "^4.6.0"
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
-  }
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
